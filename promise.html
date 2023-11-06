@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promse Implementation</title>
+  </head>
+  <body>
+
+    <script>
+      opportunity = [
+        {
+          "Id": "0062w00000JMWp1AAH",
+          "AccountId": "0012w00001L9igpAAB",
+          "Name": "tata-Oppo-1",
+          "Description": null,
+          "StageName": "Prospecting",
+          "Amount": null,
+          "Probability": 10,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": null,
+          "LeadSource": null
+        },
+        {
+          "Id": "0062w00000JMWp2AAH",
+          "AccountId": "0012w00001L9igpAAB",
+          "Name": "tata-Oppo-3",
+          "Description": null,
+          "StageName": "Qualification",
+          "Amount": null,
+          "Probability": 10,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": null,
+          "LeadSource": null
+        },
+        {
+          
+          "Id": "0062w00000JMWpGAAX",
+          "AccountId": "0012w00001L9igpAAB",
+          "Name": "tata-Oppo-2",
+          "Description": null,
+          "StageName": "Qualification",
+          "Amount": null,
+          "Probability": 10,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": null,
+          "LeadSource": null
+        },
+        {
+          "Id": "0062w00000JMWpHAAX",
+          "AccountId": "0012w00001L9igpAAB",
+          "Name": "Tata-Oppo-B-1",
+          "Description": null,
+          "StageName": "Prospecting",
+          "Amount": null,
+          "Probability": 10,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": null,
+          "LeadSource": null
+        },
+        {
+          "Id": "0062w00000JMWpfAAH",
+          "AccountId": "0012w00001L9igpAAB",
+          "Name": "Tata-Oppo-B-2",
+          "Description": null,
+          "StageName": "Needs Analysis",
+          "Amount": null,
+          "Probability": 20,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": null,
+          "LeadSource": null
+        },
+        {
+          "Id": "0062w00000JMWppAAH",
+          "AccountId": "0012w00001L9igpAAB",
+          "Name": "Tata-Oppo-B-3",
+          "Description": null,
+          "StageName": "Qualification",
+          "Amount": null,
+          "Probability": 10,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": null,
+          "LeadSource": null
+        },
+        {
+          
+          "Id": "0062w00000K9JJWAA3",
+          "AccountId": "0012w00001LsFNVAA3",
+          "Name": "Edge Emergency Generator",
+          "Description": null,
+          "StageName": "Closed Won",
+          "Amount": 75000,
+          "Probability": 100,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-17",
+          "Type": "New Customer",
+          "LeadSource": "Word of mouth"
+        },
+        {
+          
+          "Id": "0062w00000K9JJdAAN",
+          "AccountId": "0012w00001LsFNVAA3",
+          "Name": "Edge Installation",
+          "Description": null,
+          "StageName": "Closed Won",
+          "Amount": 50000,
+          "Probability": 100,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2022-12-09",
+          "Type": "Existing Customer - Upgrade",
+          "LeadSource": "Word of mouth"
+        },
+        {
+          "Id": "0062w00000K9JJeAAN",
+          "AccountId": "0012w00001LsFNVAA3",
+          "Name": "Edge SLA",
+          "Description": null,
+          "StageName": "Closed Won",
+          "Amount": 60000,
+          "Probability": 100,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2022-11-04",
+          "Type": "Existing Customer - Upgrade",
+          "LeadSource": "Word of mouth"
+        },
+        {
+        
+          "Id": "0062w00000K9JJsAAN",
+          "AccountId": "0012w00001LsFNVAA3",
+          "Name": "Edge Emergency Generator",
+          "Description": null,
+          "StageName": "Id. Decision Makers",
+          "Amount": 35000,
+          "Probability": 60,
+          "TotalOpportunityQuantity": null,
+          "CloseDate": "2023-02-23",
+          "Type": "Existing Customer - Replacement",
+          "LeadSource": null
+        }
+      ];
+      //console.log(opportunity)
+      let totalAmount = opportunity.slice().map(draft=>{
+        let field = Object({},draft)
+        console.log(field)
+      })
+
+      
+      
+      console.log(totalAmount)
+      
+      
+      let _url = document.URL;
+      console.log("Url of the site", _url);
+
+      let ele = document.createElement("input");
+      ele.type = "checkbox";
+      ele.id = "chk";
+      ele.value = "isActive";
+      ele.name = "Active?";
+      //ele.value=true;
+      let lb = document.createElement("label");
+      lb.htmlFor = "chk";
+      lb.value = "check";
+
+      lb.appendChild(document.createTextNode("Active.?"));
+      document.body.appendChild(ele);
+      document.body.appendChild(lb);
+
+      /*let prm = new Promise(function(resolve,reject){
+            console.log('Inside the promise');
+            resolve(56);
+        });*/
+    </script>
+  </body>
+</html>

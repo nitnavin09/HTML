@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event</title>
+    <style>
+        #btn{
+            background-color: red;
+            color: white;
+            padding: 8px 12px;
+            border: 2px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is a heading</h3>
+        <p id="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe porro reprehenderit rerum incidunt. Repellendus dolor porro ipsa error ratione laborum quae mollitia vel molestiae impedit!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellat error est facere eum. Voluptates!
+        </p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+    <script>
+       
+       function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('hide');
+            console.log(btn);
+            console.log(para);
+
+            if(para.style.display != 'none'){
+    
+                para.style.display = 'none';
+            }
+            else{
+    
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

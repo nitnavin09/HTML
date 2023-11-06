@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Javascript Arrow function</title>
+</head>
+<body>
+    <form action="">
+      <label for="idNumber">Number</label>
+      <input type="text" name="number" value="888888888888" id="idNumber" placeholder="**** **** **** ****" data-inputmask="'mask': '9999-9999-9999-9999'" / >
+      
+    </form>
+    
+    <script>
+    
+    url='https://api.github.com/users';
+
+    async function getdata(){
+      console.log('Inside the getdata function');
+      const response = await fetch('https://api.github.com/users');
+      console.log('Before response');
+      const users = await response.json();
+      console.log('User are here');
+      return users;
+    }
+    console.log('Before calling function');
+    let a =getdata();
+    console.log('After calling function')
+    console.log(a);
+    a.then((data)=> console.log(data));
+      //let sel = document.getElementById('idNumber').inputmask();
+     //sel = sel.mask();
+     // console.log(sel);
+
+     // var num = document.getElementsByTagName('input'); 
+      //console.log(num[0].value);
+///var newNum1 =num[0].value.toString().match(/.{4}/g).join('-');
+///console.log(newNum1);
+     // var newNum2 =num[0].value.toString().match(/.{4}/g).join('-');
+     // console.log(newNum2[0].toString().match('\\d*'));
+      
+        //function sum(a,b){
+        ///return a+b;
+      // }
+        //sum();
+
+        //let sum2 = () => console.log('Good Morning..!!');
+        //sum2();
+
+       /// let sum2 = (a,b)=>{
+        //    return a+b;
+        //}
+        //setTimeout(()=>{
+//console.log('Good Morning..!!');
+//},2000);
+
+        //let a =10;
+        //let b='String';
+       /* let c=null;
+        let d= true;
+        let e=Symbol('I am a nice symbol');
+        let f=BigInt(567);
+        let g= undefined;
+*/
+////console.log(a,b,c,d,e,f,g);
+       // console.log(typeof a);
+       // console.log(typeof b);
+       // console.log(typeof c);
+        ///console.log(typeof d);
+        //.log(typeof e);
+        //console.log(typeof f);
+       // console.log(typeof g);
+        
+       // const item={
+        //    "name":"navin",
+          ///  "Age":35,
+        ///    "Gender":'Male'
+        //}
+       // console.log(item['Age']);
+       // console.log(item['name']);
+       // console.log(item['Gender']);
+
+       // for(let i=0; i<Object.keys(item).length; i++){
+       //     console.log('The Object of key is '+Object.keys(item)[i]+' and value of  '+item[Object.keys(item)[i]]);
+        //}
+
+       // for(let key in item){
+       //     console.log("Item object's key is "+key +" and value of item is "+item[key]);
+       // }
+       
+        // template literals
+       // let boy1 ='Navin';
+        //let boy2 ='Vikas';
+        
+       // console.log('boy1 is friend of boy2');
+       // console.log(`${boy1} is friend of ${boy2}`);
+        
+        //Escape sequence character
+            //console.log('this's');
+          //  console.log('This\'s my friend');
+           // console.log(`This's my friend`);
+
+        //
+        //console.log("log".bold());
+        //let str =  "Navin Nitnaware";
+       // console.log(str.length);
+       //console.log( str.toLowerCase());
+       //console.log( str.toUpperCase());
+        //console.log(str.concat('Nitnaware'));
+        //console.log(str.charAt(4));
+        //console.log(str.trim());
+        //console.log(str.slice(2,4));
+        //console.log(str.slice(2));
+        //let str3 = "This is a demo";
+        ///console.log(str3);
+        //console.log(str3.slice(str3.lastIndexOf(' ')));
+        //console.log(str3.split(' '));
+
+        /*const class_12 =[91,34,21,99,'Harry',undefined];
+        console.log(class_12);
+        console.log(class_12[0]);
+        console.log(class_12[1]);
+        console.log(class_12[2]);
+        console.log(class_12[3]);
+        console.log(class_12[4]);
+        console.log(class_12[5]);
+        class_12[6]=33;
+        console.log(class_12[6]);
+        console.log(class_12.length);
+        //for(let key=0;key<class_12.length;key++){
+        //      console.log(class_12[key]);
+        //}
+
+        for(let key in class_12){
+            console.log('This another way to iterate '+class_12[key]);
+        }*/
+
+        //let num =[1,2,3,4];
+        //console.log(num.length);
+        //let r = num.join(' and ');
+        //let m = num.join('_');
+        //console.log(m);
+        //console.log(r);
+        //let mr =num.pop();
+        //console.log(mr);
+        //console.log(num,mr);
+        //let addr = num.push();
+        //console.log(addr);
+        //console.log(addr,num);
+        //console.log(num.shift());
+        //console.log(num.unshift());
+
+        ///let num = [1,2,3,4,5,6,7,8,9];
+
+      /*  for(let key=0; key<num.length;key++){
+            console.log(num[key]);
+        }*/
+        // for..of
+       // for(let i of num){
+        //    console.log('This is output ',i);
+        //}
+        
+        // for...in
+        //for(let key of num){
+        //    console.log('This is for..in ',key);
+        //}
+
+       // let str =["Navin","Vikas","Dinesh","Jatin"];
+       // let newStr =Array.from(str);
+       // console.log(newStr);
+        
+       //num.forEach((element)=>{
+       //     return console.log(element*element);
+       //})
+        
+        
+
+    
+    </script>
+</body>
+</html>

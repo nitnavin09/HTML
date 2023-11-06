@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript SetTime out and clearOut</title>
+</head>
+<body>
+    <div class="container">
+        <p>Current time is <span id="time"></span></p>
+    </div>
+    <script>
+        function displayTime(){
+            tm = new Date();
+            console.log(tm);
+            let dat = tm.getDate();
+            console.log(dat);
+            let yer = tm.getFullYear();
+            console.log(yer); 
+            let mon = tm.getMonth();
+            console.log(mon);  
+            let sec = tm.getSeconds();
+            console.log(sec);
+            document.getElementById('time').innerHTML = tm;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>
